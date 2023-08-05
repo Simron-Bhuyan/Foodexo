@@ -7,8 +7,8 @@ import '@tomtom-international/web-sdk-maps/dist/maps.css'
 const App = () => {
   const mapElement = useRef()
   const [map, setMap] = useState({})
-  const [longitude, setLongitude] = useState(-0.112869)
-  const [latitude, setLatitude] = useState(51.504)
+  const [longitude, setLongitude] = useState(85.824539)
+  const [latitude, setLatitude] = useState(20.296059)
 
   const convertToPoints = (lngLat) => {
     return {
@@ -158,7 +158,7 @@ const App = () => {
         <div className="app">
           <div ref={mapElement} className="map" />
           <div className="search-bar">
-            <h1>Where to?</h1>
+            Where to?
             <input
               type="text"
               id="longitude"
